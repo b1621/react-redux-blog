@@ -11,9 +11,9 @@ const PostsList = () => {
     .slice()
     .sort((a, b) => b.date.localeCompare(a.date));
   return (
-    <div className="  w-[700px] mx-auto ">
+    <div className='  w-[700px] mx-auto '>
       <AddPost />
-      <p className=" text-3xl my-8 text-slate-600 text-center">Posts List</p>
+      <p className=' text-3xl my-8 text-slate-600 text-center'>Posts List</p>
       {posts && posts.length !== 0 ? (
         <div>
           {orderedPosts.map((post) => (
